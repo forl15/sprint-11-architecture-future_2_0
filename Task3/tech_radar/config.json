@@ -1,0 +1,120 @@
+{
+  "basePath": "/",
+  "baseUrl": "",
+  "editUrl": "",
+  "logoFile": "logo.svg",
+  "jsFile": "",
+  "toggles": {
+    "showSearch": true,
+    "showChart": true,
+    "showTagFilter": true,
+    "showQuadrantList": true,
+    "showEmptyRings": false
+  },
+  "sections": ["radar", "tags", "list"],
+  "quadrants": [
+    {
+      "id": "data-platform",
+      "title": "Платформа данных и хранение",
+      "description": "Хранение, организация и масштабирование данных.",
+      "color": "#a3b18a"
+    },
+    {
+      "id": "integration",
+      "title": "Интеграция и обработка данных",
+      "description": "Обмен данными между доменами, обработка и автоматизация потоков.",
+      "color": "#e9c46a"
+    },
+    {
+      "id": "analytics-bi",
+      "title": "Аналитика и бизнес-сервисы",
+      "description": "Аналитика, визуализация, самообслуживание и использование данных бизнес-пользователями.",
+      "color": "#84a59d"
+    },
+    {
+      "id": "security-governance",
+      "title": "Безопасность и управление данными",
+      "description": "Защита информации, управление доступом, контроль качества и надёжность.",
+      "color": "#f4a261"
+    }
+  ],
+  "rings": [
+    {
+      "id": "adopt",
+      "title": "Adopt",
+      "description": "Использовать как целевую технологию или стандарт",
+      "color": "#588157",
+      "radius": 0.5,
+      "strokeWidth": 5
+    },
+    {
+      "id": "trial",
+      "title": "Trial",
+      "description": "Внедрить и проверить на пилотных проектах",
+      "color": "#457b9d",
+      "radius": 0.69,
+      "strokeWidth": 3
+    },
+    {
+      "id": "assess",
+      "title": "Assess",
+      "description": "Изучить и оценить применимость",
+      "color": "#bc6c25",
+      "radius": 0.85,
+      "strokeWidth": 2
+    },
+    {
+      "id": "hold",
+      "title": "Hold",
+      "description": "Не развивать, постепенно выводить из эксплуатации или ограничивать использование",
+      "color": "#d62828",
+      "radius": 1,
+      "strokeWidth": 0.75
+    }
+  ],
+  "flags": {
+    "new": {
+      "color": "#f1235a",
+      "title": "New",
+      "titleShort": "N",
+      "description": "Новое в этой версии"
+    },
+    "changed": {
+      "color": "#40a7d1",
+      "title": "Changed",
+      "titleShort": "C",
+      "description": "Недавно изменено"
+    },
+    "default": {
+      "description": "Без изменений"
+    }
+  },
+  "chart": {
+    "size": 950,
+    "blipSize": 10
+  },
+  "social": [],
+  "imprint": "",
+  "labels": {
+    "title": "Технологический радар «Будущее 2.0»",
+    "imprint": "",
+    "quadrant": "Направление",
+    "quadrantOverview": "Обзор направлений",
+    "zoomIn": "Приблизить",
+    "filterByTag": "Фильтр по тегу",
+    "footer": "Учебный проект «Будущее 2.0». Радар собран на open-source генераторе aoe_technology_radar (AOE GmbH).",
+    "notUpdated": "Позиция не обновлялась в последних трёх версиях радара. Если она появилась в недавних выпусках, она, вероятно, всё ещё актуальна; если раньше — её релевантность может снизиться.",
+    "notFound": "404 — страница не найдена",
+    "pageAbout": "О радаре",
+    "pageOverview": "Каталог технологий",
+    "pageSearch": "Поиск",
+    "searchPlaceholder": "Что вы ищете?",
+    "metaDescription": "Технологический радар учебного проекта «Будущее 2.0»: технологии, инструменты и архитектурные подходы по направлениям и кольцам Adopt / Trial / Assess / Hold."
+  },
+  "fuzzySearch": {
+    "threshold": 0.4,
+    "distance": 600,
+    "ignoreLocation": false,
+    "includeScore": true
+  }
+}

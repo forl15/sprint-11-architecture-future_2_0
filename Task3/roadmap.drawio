@@ -1,0 +1,109 @@
+<mxfile host="app.diagrams.net" modified="2026-11-10T12:00:00.000Z" agent="architecture-team" version="24.7.17" type="device">
+  <diagram id="page1" name="Roadmap — Будущее 2.0">
+    <mxGraphModel dx="1600" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1780" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="TITLE" value="Роадмап изменений — «Будущее 2.0»" style="text;html=0;align=left;verticalAlign=middle;fontSize=24;fontStyle=1;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="40" y="18" width="900" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="SUBTITLE" value="[Горизонт: 12 месяцев + поэтапный вывод легаси] Три оси: запуск портала · независимость подразделений · качество мед/фин-сервисов" style="text;html=0;align=left;verticalAlign=middle;fontSize=13;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="40" y="54" width="1400" height="22" as="geometry" />
+        </mxCell>
+
+        <mxCell id="PH0H" value="&lt;b&gt;Волна 0 · 0–2 мес&lt;/b&gt;&lt;br&gt;Фундамент и Governance (гейт)&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Команды: PMO, архитектор, CISO, платформа, владельцы доменов&lt;/font&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#1f5fa8;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="320" y="90" width="340" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PH1H" value="&lt;b&gt;Волна 1 · 2–6 мес&lt;/b&gt;&lt;br&gt;MVP платформы и портала&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Команды: платформа + доменные команды (финтех, корпоративный)&lt;/font&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#1f5fa8;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="680" y="90" width="340" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PH2H" value="&lt;b&gt;Волна 2 · 6–12 мес&lt;/b&gt;&lt;br&gt;Независимость и самообслуживание&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Команды: Portal, BI, домены, Data Governance, SRE, FinOps&lt;/font&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#1f5fa8;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="90" width="340" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PH3H" value="&lt;b&gt;Волна 3 · 12+ мес&lt;/b&gt;&lt;br&gt;Поэтапный вывод легаси&lt;br&gt;&lt;font style=&quot;font-size:10px&quot;&gt;Команды: legacy-группа, SRE, домены&lt;/font&gt;" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#8c8c8c;fontColor=#ffffff;align=center;verticalAlign=middle;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="90" width="340" height="52" as="geometry" />
+        </mxCell>
+
+        <mxCell id="LANE1BG" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7fafc;strokeColor=#dddddd;" vertex="1" parent="1">
+          <mxGeometry x="320" y="152" width="1420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="LANE1T" value="&lt;b&gt;Портал&lt;br&gt;самообслуживания&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="40" y="202" width="260" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="LANE2BG" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7fafc;strokeColor=#dddddd;" vertex="1" parent="1">
+          <mxGeometry x="320" y="314" width="1420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="LANE2T" value="&lt;b&gt;Независимость&lt;br&gt;подразделений&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="40" y="364" width="260" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="LANE3BG" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f7fafc;strokeColor=#dddddd;" vertex="1" parent="1">
+          <mxGeometry x="320" y="476" width="1420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="LANE3T" value="&lt;b&gt;Качество и комплаенс&lt;br&gt;мед / фин сервисов&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=12;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="40" y="526" width="260" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="L1P0" value="· Согласованы сценарии портала и первые отчёты&lt;br&gt;· Определены правила доступа и роли&lt;br&gt;· Выбраны пилотные наборы данных&lt;br&gt;· Разработка, тесты и эксплуатация разделены&lt;br&gt;&lt;i&gt;Итог: план MVP и «гейт» для загрузки данных&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="164" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P1" value="· 10–20 отчётов: поиск и просмотр без заявки в ИТ&lt;br&gt;· Единый вход, доступ по роли и цели&lt;br&gt;· Пилотный контур: проверяем и развиваем&lt;br&gt;&lt;i&gt;Итог: первые отчёты у бизнеса без очереди в ИТ&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="690" y="164" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P2" value="· Бизнес сам собирает отчёты: фильтры, срезы, сохранённые виды&lt;br&gt;· Подписки и выгрузки с проверкой прав&lt;br&gt;· 30–50 ключевых отчётов переведены&lt;br&gt;· ≥ 80% запросов — без участия ИТ&lt;br&gt;&lt;i&gt;Итог: самообслуживание становится нормой&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="164" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L1P3" value="· Единая точка входа для сотрудников и партнёров&lt;br&gt;· Новые направления — по готовому шаблону&lt;br&gt;&lt;i&gt;Итог: портал в штатной эксплуатации&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="164" width="320" height="126" as="geometry" />
+        </mxCell>
+
+        <mxCell id="L2P0" value="· 6 доменов и владельцы данных&lt;br&gt;· Единые правила обмена данными&lt;br&gt;· Какие данные допустимы в аналитике&lt;br&gt;· Запрет на новую логику в старом хранилище&lt;br&gt;&lt;i&gt;Итог: правила игры и ответственность зафиксированы&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="326" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L2P1" value="· Первые домены: финтех и корпоративный&lt;br&gt;· Данные идут напрямую из систем-источников&lt;br&gt;· Проверка на входе: сырые → очищенные → витрины&lt;br&gt;· Бизнес-правила остаются в домене&lt;br&gt;&lt;i&gt;Итог: старое хранилище — не центр интеграции&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="690" y="326" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L2P2" value="· Единые KPI для штаба и доменов&lt;br&gt;· ИИ-модели работают, медданные не выходят наружу&lt;br&gt;· 100% критичных данных — в каталоге&lt;br&gt;· Пилот партнёра (фарма) по типовому договору&lt;br&gt;&lt;i&gt;Итог: одна цифра для всех&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="326" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L2P3" value="· Новые партнёры — за 4–6 недель&lt;br&gt;· Домены сами публикуют свои данные&lt;br&gt;&lt;i&gt;Итог: масштабирование без узкого места&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="326" width="320" height="126" as="geometry" />
+        </mxCell>
+
+        <mxCell id="L3P0" value="· Классификация данных и модель угроз&lt;br&gt;· Разграничение доступа между контурами&lt;br&gt;· Медкарты и исследования — вне аналитики&lt;br&gt;· Аудит доступа&lt;br&gt;&lt;i&gt;Итог: комплаенс до промышленной загрузки&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="330" y="488" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L3P1" value="· Проверка данных на входе, брак — в карантин&lt;br&gt;· Медицинский и финансовый контуры изолированы&lt;br&gt;· Чувствительные данные маскируются&lt;br&gt;&lt;i&gt;Итог: 0 медкарт в витринах&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="690" y="488" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L3P2" value="· Доступ по ролям — к отчётам и данным&lt;br&gt;· Качество и прослеживаемость — в постоянном режиме&lt;br&gt;· Резервное копирование и проверка восстановления&lt;br&gt;· Отказоустойчивость по классам систем&lt;br&gt;· SLA: 99,9% портал / 99,95% критичные&lt;br&gt;&lt;i&gt;Итог: стабильные мед- и фин-сервисы&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="488" width="320" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="L3P3" value="· Поэтапно выводим: SQL Server 2008 → PowerBuilder → Camel&lt;br&gt;· Power BI — постепенно на сертифицированные модели&lt;br&gt;· Каждый шаг — после переноса функций и проверки&lt;br&gt;· Полный вывод может занять больше 12 месяцев&lt;br&gt;&lt;i&gt;Итог: легаси вне критического пути&lt;/i&gt;" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=left;verticalAlign=top;spacingLeft=10;spacingRight=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="488" width="320" height="126" as="geometry" />
+        </mxCell>
+
+        <mxCell id="OCCT" value="&lt;b&gt;Ожидаемые результаты по волнам&lt;/b&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="40" y="660" width="260" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="OC0" value="0 нарушений политик мед/фин-данных; правила игры утверждены" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#eef4fb;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="330" y="688" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OC1" value="90% отчётов — &lt;5 мин; новый домен — 4–6 недель" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#eef4fb;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="690" y="688" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OC2" value="Самообслуживание ≥ 80%; KPI едины; пилот партнёра (фарма)" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#eef4fb;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="688" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OC3" value="Стоимость поддержки ниже: отказ от неподдерживаемых систем" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#eef4fb;strokeColor=#b9d0ea;fontSize=10;fontColor=#1f3550;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1410" y="688" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FOOTNOTE" value="Технические детали — в roadmap.md и технологическом радаре" style="text;html=0;align=left;verticalAlign=middle;fontSize=10;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="40" y="758" width="900" height="18" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
