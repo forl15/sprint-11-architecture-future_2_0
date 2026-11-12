@@ -1,0 +1,138 @@
+<mxfile host="app.diagrams.net" agent="opencode" version="24.7.17">
+  <diagram id="future20-automation" name="Automation">
+    <mxGraphModel dx="1400" dy="1200" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1580" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="admin" value="Администратор" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="240" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="git" value="Git Repository&lt;br&gt;Terraform source" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cli" value="Terraform CLI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="210" y="230" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="provider" value="Yandex Cloud Provider" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="180" y="340" width="280" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ssh1" value="SSH" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="500" y="300" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cloud" value="Yandex Cloud / ru-central1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;verticalAlign=top;align=left;fontStyle=1;fontSize=14;fontColor=#333333;spacingTop=6;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="20" y="470" width="960" height="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="vpc" value="VPC: future20-network" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;verticalAlign=top;align=left;fontStyle=1;fontSize=13;fontColor=#1a1a1a;spacingTop=6;spacingLeft=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="540" width="920" height="900" as="geometry" />
+        </mxCell>
+
+        <mxCell id="sgb" value="Security Group: Bastion" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="60" y="620" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="sgp" value="Security Group: Platform" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="330" y="620" width="200" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pubnet" value="Public subnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;verticalAlign=top;align=center;fontSize=12;fontColor=#1a1a1a;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="560" y="600" width="380" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="bastionvm" value="Bastion VM&lt;br&gt;2 vCPU / 2 GB&lt;br&gt;core_fraction 20%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="600" y="640" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="bastionboot" value="Boot Disk&lt;br&gt;10 GB HDD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="600" y="760" width="300" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ssh2" value="SSH" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="700" y="900" width="70" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="privnet" value="Private subnet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;verticalAlign=top;align=center;fontSize=12;fontColor=#1a1a1a;spacingTop=4;" vertex="1" parent="1">
+          <mxGeometry x="180" y="960" width="620" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="platformvm" value="Data Platform VM&lt;br&gt;4 vCPU / 8 GB RAM&lt;br&gt;core_fraction 20%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1010" width="460" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="datadisk" value="Data Disk&lt;br&gt;10 GB HDD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1150" width="260" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="bootdisk" value="Boot Disk&lt;br&gt;10 GB SSD" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1150" width="260" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="rt" value="Private Route Table" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1310" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nat" value="NAT Gateway" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#1a1a1a;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="680" y="1390" width="250" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;" edge="1" parent="1" source="admin" target="git">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;" edge="1" parent="1" source="git" target="cli">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;" edge="1" parent="1" source="cli" target="provider">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;dashed=1;" edge="1" parent="1" source="admin" target="ssh1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;dashed=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="ssh1" target="bastionvm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e6" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="bastionvm" target="bastionboot">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;dashed=1;exitX=1;exitY=0.5;entryX=1;entryY=0.5;" edge="1" parent="1" source="bastionvm" target="ssh2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;dashed=1;exitX=0.5;exitY=1;entryX=1;entryY=0.5;" edge="1" parent="1" source="ssh2" target="platformvm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e9" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;exitX=0.3;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="platformvm" target="datadisk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#666666;exitX=0.7;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="platformvm" target="bootdisk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e11" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#82b366;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="privnet" target="rt">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#82b366;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" edge="1" parent="1" source="rt" target="nat">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e13" value="" style="endArrow=block;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;strokeColor=#b3b3b3;exitX=0.9;exitY=1;entryX=0.95;entryY=0;" edge="1" parent="1" source="provider" target="vpc">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="l1" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1500" width="24" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="l1t" value="создаётся Terraform" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="72" y="1494" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1500" width="24" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="l2t" value="вручную (вне Terraform)" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="332" y="1494" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="590" y="1500" width="24" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="l3t" value="границы облака, VPC, подсетей" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="622" y="1494" width="280" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

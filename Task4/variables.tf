@@ -32,7 +32,7 @@ variable "admin_cidr" {
   type        = string
 
   validation {
-    condition = can(cidrnetmask(var.admin_cidr))
+    condition     = can(cidrnetmask(var.admin_cidr))
     error_message = "admin_cidr must be a valid CIDR."
   }
 }
@@ -54,16 +54,19 @@ variable "image_family" {
 }
 
 variable "bastion_disk_size" {
-  type    = number
-  default = 20
+  description = "Bastion boot disk size, GB"
+  type        = number
+  default     = 10
 }
 
 variable "platform_boot_disk_size" {
-  type    = number
-  default = 30
+  description = "Data platform boot disk size, GB"
+  type        = number
+  default     = 10
 }
 
 variable "platform_data_disk_size" {
-  type    = number
-  default = 100
+  description = "Data platform secondary disk size, GB"
+  type        = number
+  default     = 10
 }

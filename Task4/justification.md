@@ -59,9 +59,9 @@ NAT Gateway Yandex Cloud.
 
 Параметры:
 
-- 2 vCPU;
+- 2 vCPU (core_fraction 20%);
 - 2 GB RAM;
-- 20 GB SSD;
+- 10 GB network-hdd;
 - Ubuntu 22.04 LTS;
 - публичный IP.
 
@@ -79,10 +79,10 @@ NAT Gateway Yandex Cloud.
 
 Параметры:
 
-- 4 vCPU;
+- 4 vCPU (core_fraction 20%);
 - 8 GB RAM;
-- 30 GB системный диск;
-- 100 GB дополнительный SSD;
+- 10 GB системный диск network-ssd;
+- 10 GB дополнительный диск network-hdd;
 - Ubuntu 22.04 LTS;
 - только приватный IP.
 
@@ -102,10 +102,11 @@ Airflow и Lakehouse потребуется отдельное
 
 ### 3.3. Диски
 
-Используются отдельные диски:
+Используются три отдельных диска:
 
-- Boot Disk — 30 GB.
-- Data Disk — 100 GB.
+- Bastion Boot Disk — 10 GB, network-hdd.
+- Platform Boot Disk — 10 GB, network-ssd.
+- Platform Data Disk — 10 GB, network-hdd.
 
 Разделение позволяет независимо управлять
 системными и рабочими данными.
@@ -113,10 +114,6 @@ Airflow и Lakehouse потребуется отдельное
 При переустановке операционной системы
 дополнительный диск может быть сохранён
 и подключён повторно.
-
-Для дисков выбран тип network-ssd,
-обеспечивающий более высокую производительность
-по сравнению с обычным HDD.
 
 ## 4. Безопасность
 

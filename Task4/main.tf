@@ -29,7 +29,7 @@ locals {
         shell: /bin/bash
         sudo: ALL=(ALL) NOPASSWD:ALL
         ssh_authorized_keys:
-          - ${trimspace(file(var.ssh_public_key_path))}
+          - ${trimspace(file(pathexpand(var.ssh_public_key_path)))}
     package_update: true
     timezone: Europe/Moscow
   EOF
@@ -144,7 +144,7 @@ data "yandex_compute_image" "ubuntu" {
 
 resource "yandex_compute_disk" "bastion_boot" {
   name     = "future20-bastion-boot"
-  type     = "network-ssd"
+  type     = "network-hdd"
   zone     = var.zone
   size     = var.bastion_disk_size
   image_id = data.yandex_compute_image.ubuntu.id
@@ -169,8 +169,8 @@ resource "yandex_compute_instance" "bastion" {
   }
 
   network_interface {
-    subnet_id          = yandex_vpc_subnet.public.id
-    nat                = true
+    subnet_id = yandex_vpc_subnet.public.id
+    nat       = true
     security_group_ids = [
       yandex_vpc_security_group.bastion.id
     ]
@@ -198,24 +198,25 @@ resource "yandex_compute_disk" "platform_boot" {
 }
 
 resource "yandex_compute_disk" "platform_data" {
-  name  = "future20-platform-data"
-  type  = "network-ssd"
-  zone  = var.zone
-  size  = var.platform_data_disk_size
+  name = "future20-platform-data"
+  type = "network-hdd"
+  zone = var.zone
+  size = var.platform_data_disk_size
 
   labels = local.common_labels
 }
 
 resource "yandex_compute_instance" "platform" {
-  name        = "future20-data-platform"
-  hostname    = "data-platform"
-  zone        = var.zone
-  platform_id = "standard-v3"
+  name                      = "future20-data-platform"
+  hostname                  = "data-platform"
+  zone                      = var.zone
+  platform_id               = "standard-v3"
+  allow_stopping_for_update = true
 
   resources {
-    cores         = 4
-    memory        = 8
-    core_fraction = 100
+    cores  = 4
+    memory = 8
+    core_fraction = 20
   }
 
   boot_disk {
@@ -229,8 +230,8 @@ resource "yandex_compute_instance" "platform" {
   }
 
   network_interface {
-    subnet_id          = yandex_vpc_subnet.private.id
-    nat                = false
+    subnet_id = yandex_vpc_subnet.private.id
+    nat       = false
     security_group_ids = [
       yandex_vpc_security_group.platform.id
     ]
