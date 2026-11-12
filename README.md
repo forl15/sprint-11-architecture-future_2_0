@@ -29,7 +29,7 @@ Data Flow Diagram и аргументация границ доменов.
 | [`Task3/technology-radar.md`](Task3/technology-radar.md) | Сводное описание радара: технологии по квадрантам, статусы и обоснование выбора. |
 | [`Task3/roadmap.md`](Task3/roadmap.md) | Роадмап на 12+ месяцев: волны изменений, результаты, команды и ресурсы, KPI, SLA/RTO/RPO, зависимости и бизнес-обоснование. |
 | [`Task3/roadmap.drawio`](Task3/roadmap.drawio) | Визуальная схема роадмапа: 4 волны × 3 оси (портал / независимость подразделений / качество мед- и фин-сервисов). |
-| [`Task3/tech_radar/`](Task3/tech_radar/) | Исходники и сборка интерактивного сайта радара. Завуск - `npm run serve`|
+| [`Task3/tech_radar/`](Task3/tech_radar/) | Исходники и сборка интерактивного сайта радара. Запуск — `npm run serve`. |
 
 ## Task 4 — Облачная инфраструктура (Terraform)
 
@@ -42,6 +42,7 @@ Data Flow Diagram и аргументация границ доменов.
 | [`Task4/outputs.tf`](Task4/outputs.tf) | Ключевые параметры после применения. |
 | [`Task4/terraform.tfvars`](Task4/terraform.tfvars) | Значения переменных для окружения. |
 | [`Task4/diagram.drawio`](Task4/diagram.drawio) | Диаграмма автоматизации. |
+| [`Task4/diagram.png`](Task4/diagram.png) | Экспорт диаграммы автоматизации. |
 | [`Task4/justification.md`](Task4/justification.md) | Обоснование конфигурации. |
 | [`Task4/.terraform.lock.hcl`](Task4/.terraform.lock.hcl) | Lock-файл провайдера `yandex-cloud/yandex` версии `0.244.0` с контрольными суммами для Windows и Linux. |
 | [`Task4/terraform_apply_screenshot.png`](Task4/terraform_apply_screenshot.png) | Скриншот успешного `terraform apply`. |
